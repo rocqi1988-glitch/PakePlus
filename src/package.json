@@ -1,0 +1,29 @@
+{
+  "name": "acorn-home",
+  "version": "1.0.0",
+  "description": "Acorn Home Desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.acorn.home",
+    "productName": "Acorn Home",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "icon.png",
+      "target": ["dmg"]
+    },
+    "win": {
+      "icon": "icon.png",
+      "target": ["nsis"]
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.2.2",
+    "electron-builder": "^26.8.1"
+  }
+}
